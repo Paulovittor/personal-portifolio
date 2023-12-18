@@ -1,0 +1,193 @@
+/*importando fonte Montserrat do goole fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+/*definindo um seletor universal para trabalhar com os elementos da box model(content, padding, border) ao mesmo tempo, em vez de individualmente*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*definindo que todos os elementos serão dimensionados ao mesmo tempo*/
+  /*fontes importadas*/
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  /*seletor temporário pois uma imagem de fundo fixa irá copor a página*/
+  width: 100%; /*site ocupará 100% a largura do navegador*/
+  height: 100vh; /*total do viewport height do navegador (altura)*/
+  background-color: #272727;
+}
+header {
+  /*cabeçalho da página*/
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /*transformando o container em uma flexbox*/
+  align-items: center;
+  justify-content: space-around;
+  /*parametros adcionados após imagem de fundo*/
+  position: fixed; /*fixando o header na tela para não subir após rolagem*/
+  z-index: 99; /*definindo a sobreposição do header sobre outros elementos*/
+}
+header .logo {
+  width: 50%; /*largura referente ao cabeçalho*/
+}
+header .logo img {
+  /*tamanho da imagem*/
+  width: 140px;
+}
+header .menu ul {
+  display: flex; /*transforma a lista em flex*/
+}
+header .menu ul li {
+  padding: 0 20px;
+  list-style: none; /*removendo os marcadores de lista*/
+}
+header .menu ul li a {
+  text-decoration: none; /*retira o sublinhado da <a>*/
+  text-transform: uppercase; /*caixa alta*/
+  color: #fff;
+}
+header .menu ul li a:hover {
+  /*evento de mouse*/
+  color: #156fc3;
+  transition: 0.5s ease;
+}
+
+/*==========MAIN.INICIO===========*/
+
+#inicio .container {
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE.jpg); /*definindo imagem de fundo*/
+  background-size: cover; /*redimensionando a imagem de fundo para cobrir toda a área do elemento em que se encontra*/
+}
+#inicio .container .icons {
+  width: 10%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  position: fixed;
+  z-index: 999;
+}
+#inicio .container .icons ion-icon {
+  padding: 25px 0;
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.5s ease;
+}
+#inicio .container .icons ion-icon:hover {
+  color: #156fc3;
+}
+
+/*estilizando titulo da pagina principal*/
+#inicio .container .title {
+  width: 95%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 30px;
+}
+#inicio .container .title h1 {
+  color: #156fc3;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  margin-right: 122px;
+}
+#inicio .container .title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 13.5px;
+  font-size: 5.9rem;
+  margin-left: 30px;
+}
+#inicio .container .title h3 {
+  color: #156fc3;
+  text-transform: uppercase;
+  font-size: 4.1rem;
+  letter-spacing: 10px;
+  margin-left: 35px;
+}
+#BTNdownload {
+  color: #156fc3;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 8px; /*curva da borda*/
+  border: 2px solid #156fc3; /*tamanho, grossura e cor da borda*/
+  margin-right: 278px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#BTNdownload:hover {
+  background-color: #fff;
+  border: none;
+  transition: 0.4s ease;
+}
+
+/*=========PÁGINA - SOBRE===========*/
+
+#sobre .container {
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE-2.jpg);
+  background-size: cover; /*redimensiona imagem*/
+  display: flex;
+  justify-content: space-between;
+}
+
+#sobre .container .title{
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex; /*flexbox*/
+  flex-direction: column;
+  align-items: flex-start; /*conteudo no inicio na pagina*/
+  justify-content: center; /*centro da pagina*/
+  padding: 0 60px; /*preenchimento*/
+}
+#sobre .container .title h1{
+  color: #fff;
+  font-size: 2rem;
+  text-align: left;
+}
+#sobre .container .title p{
+  color: #fff;
+  width: 500px;
+  margin-top: 15px;
+}
+/*caixa de experiencias*/
+#sobre .container .box-title{
+  width: 420px;
+  height: 59vh;
+  margin-top: 10px;
+  padding: 0 10px;
+  box-shadow: 0 0 10px 0 rgba(18, 111, 197, 0.5);
+  border-radius: 20px;
+  font-size: 13px;
+}
+#sobre .container .box-title span{
+  color: #fff;
+}
+#sobre .container .box-title .b1{
+  width: 400px;
+  height: 5px;
+  background-color: #fff;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#sobre .container .box-title .b2{
+  width: 350px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
