@@ -11,12 +11,6 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
-body {
-  /*seletor temporário pois uma imagem de fundo fixa irá copor a página*/
-  width: 100%; /*site ocupará 100% a largura do navegador*/
-  height: 100vh; /*total do viewport height do navegador (altura)*/
-  background-color: #272727;
-}
 header {
   /*cabeçalho da página*/
   width: 100%;
@@ -190,4 +184,87 @@ header .menu ul li a:hover {
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
+}
+#sobre .container .box-title .b3{
+  width: 300px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#sobre .container .box-title .b4{
+  width: 290px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#sobre .container .box-title .b5{
+  width: 250px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#sobre .container .box-title .b6{
+  width: 235px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#sobre .container .box-title .b7{
+  width: 200px;
+  height: 5px;
+  background-color: #156fc3;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/*=========PÁGINA - SOBRE===========*/
+#projetos .container{
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE_3.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/*entrando a tag input e acessando o parametro type=radio*/
+#projetos .container input[type=radio]{
+  display: none;
+}
+#projetos .container .card{
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  margin: 150px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#projetos .container .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#projetos .container .card h1{
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 6rem;
+  margin-top: 60px;
+}
+#projetos .container .card p{
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 6rem;
+  margin-top: 200px;
+  text-align: justify;
 }
