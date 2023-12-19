@@ -35,7 +35,9 @@
           <h1>Paulo Vitor Cardoso</h1>
           <h2>I'm Web</h2>
           <h3>Developer</h3>
-            <a id="BTNdownload" href="download/CURRICULO - TI.pdf" download>Download CV</a>
+          <a id="BTNdownload" href="download/CURRICULO - TI.pdf" download
+            >Download CV</a
+          >
         </div>
       </div>
     </main>
@@ -45,12 +47,20 @@
       <div class="container">
         <div class="title">
           <h1>I am a Front-End Developer</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis, voluptate facere veritatis atque nam a rem quo aspernatur, ut possimus debitis architecto expedita cupiditate quam odio eius repellat sunt!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            perspiciatis, voluptate facere veritatis atque nam a rem quo
+            aspernatur, ut possimus debitis architecto expedita cupiditate quam
+            odio eius repellat sunt!
+          </p>
           <!--Criando caixa de experiencia-->
           <div class="box-title">
-            <p>90%</p> <!--porcentagem-->
-            <div class="b1"><div class="b2"></div></div> <!--barra de porcentagem + nível de porcentagem-->
-            <span>HTML/CSS</span> <!--tecnologia-->
+            <p>90%</p>
+            <!--porcentagem-->
+            <div class="b1"><div class="b2"></div></div>
+            <!--barra de porcentagem + nível de porcentagem-->
+            <span>HTML/CSS</span>
+            <!--tecnologia-->
 
             <p>90%</p>
             <div class="b1"><div class="b3"></div></div>
@@ -79,24 +89,70 @@
     <!--conteúdo da página PROJETOS-->
     <section id="projetos">
       <div class="container">
-        <input type="radio" name="slider" id="item-1">
-        <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3">
-        <!--criando os cards: cada label será para um input acima-->
+        <!--botões tipo "radio" agrupados com name=slider com seus ids.-->
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <!--crianndo os cards-->
         <div class="cards">
-          <label class="card" for="item-1" id="song-1">
-            <img src="image/01.png" alt="">
+          <!--CARD 1-->
+          <label for="item-1" class="card" id="song-1">
+            <img src="image/01.png" alt="" />
+            <!--imagem de fundo do card 1-->
+            <h1>Web</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              facilis hic temporibus accusantium dicta rem aliquam assumenda,
+              recusandae mollitia tempora labore illum ea, et error nostrum
+              nulla sit dolorum libero?
+            </p>
+            <button>Hire me</button>
           </label>
-          <h1>Web</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum distinctio dignissimos eius similique nulla, veniam adipisci optio iure delectus molestias possimus reiciendis quam! Reiciendis beatae earum quam sapiente tempora accusamus?</p>
-          <button>Hire me</button>
-          
+
+          <!--CARD 2-->
+          <label for="item-2" class="card" id="song-2">
+            <img src="image/02.png" alt="" />
+            <h1>Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              facilis hic temporibus accusantium dicta rem aliquam assumenda,
+              recusandae mollitia tempora labore illum ea, et error nostrum
+              nulla sit dolorum libero?
+            </p>
+            <button>Hire me</button>
+          </label>
+
+          <!--CARD 3-->
+          <label for="item-3" class="card" id="song-3">
+            <img src="image/03.png" alt="" />
+            <h1>Studio</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              facilis hic temporibus accusantium dicta rem aliquam assumenda,
+              recusandae mollitia tempora labore illum ea, et error nostrum
+              nulla sit dolorum libero?
+            </p>
+            <button>Hire me</button>
+          </label>
         </div>
       </div>
     </section>
-    
+
+    <!--conteúdo da página CONTATOS-->
+    <section id="contatos">
+      <div class="container">
+        <div class="content-contact"></div>
+      </div>
+    </section>
+
     <!--importando biblioteca de icones ion icons-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
