@@ -11,6 +11,10 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  width: 100%;
+  height: 100vh;
+}
 header {
   /*cabeçalho da página*/
   width: 100%;
@@ -34,7 +38,7 @@ header .menu ul {
   display: flex; /*transforma a lista em flex*/
 }
 header .menu ul li {
-  padding: 0 20px;
+  padding: 0 35px;
   list-style: none; /*removendo os marcadores de lista*/
 }
 header .menu ul li a {
@@ -58,7 +62,7 @@ header .menu ul li a:hover {
 }
 #inicio .container .icons {
   width: 10%;
-  height: 80vh;
+  height: 97vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +72,7 @@ header .menu ul li a:hover {
 }
 #inicio .container .icons ion-icon {
   padding: 25px 0;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #fff;
   transition: 0.5s ease;
 }
@@ -79,38 +83,39 @@ header .menu ul li a:hover {
 /*estilizando titulo da pagina principal*/
 #inicio .container .title {
   width: 95%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 #inicio .container .title h1 {
   color: #156fc3;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 2rem;
   letter-spacing: 1px;
-  margin-right: 122px;
+  margin-right: 193px;
 }
 #inicio .container .title h2 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 13.5px;
-  font-size: 5.9rem;
+  font-size: 8rem;
   margin-left: 30px;
 }
 #inicio .container .title h3 {
   color: #156fc3;
   text-transform: uppercase;
-  font-size: 4.1rem;
+  font-size: 5.6rem;
   letter-spacing: 10px;
   margin-left: 35px;
 }
-#inicio .container .title h4{
+#inicio .container .title h4 {
   color: #fff;
-  font-weight: 100;
-  letter-spacing: 3.5px;
+  font-weight: 200;
+  letter-spacing: 4.5px;
+  font-size: 19px;
   margin-right: 10px;
   margin-bottom: 26px;
   margin-top: 10px;
@@ -118,11 +123,11 @@ header .menu ul li a:hover {
 #BTNdownload {
   color: #156fc3;
   background: transparent;
-  padding: 5px 10px;
+  padding: 7px 12px;
   border-radius: 8px; /*curva da borda*/
   border: 2px solid #156fc3; /*tamanho, grossura e cor da borda*/
-  margin-right: 278px;
-  font-size: 1.2rem;
+  margin-right: 369px;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -146,7 +151,7 @@ header .menu ul li a:hover {
   justify-content: space-between;
 }
 
-#sobre .container .title{
+#sobre .container .title {
   width: 90%;
   height: 100vh;
   margin: 0 auto;
@@ -156,72 +161,73 @@ header .menu ul li a:hover {
   justify-content: center; /*centro da pagina*/
   padding: 0 60px; /*preenchimento*/
 }
-#sobre .container .title h1{
+#sobre .container .title h1 {
   color: #fff;
   font-size: 2rem;
+  text-transform: uppercase;
   text-align: left;
 }
-#sobre .container .title p{
+#sobre .container .title p {
   color: #fff;
   width: 500px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 /*caixa de experiencias*/
-#sobre .container .box-title{
+#sobre .container .box-title {
   width: 420px;
-  height: 59vh;
-  margin-top: 10px;
+  height: 49vh;
+  margin-top: 20px;
   padding: 0 10px;
   box-shadow: 0 0 10px 0 rgba(18, 111, 197, 0.5);
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 15px;
 }
-#sobre .container .box-title span{
+#sobre .container .box-title span {
   color: #fff;
 }
-#sobre .container .box-title .b1{
+#sobre .container .box-title .b1 {
   width: 400px;
   height: 5px;
   background-color: #fff;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b2{
+#sobre .container .box-title .b2 {
   width: 350px;
   height: 5px;
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b3{
+#sobre .container .box-title .b3 {
   width: 300px;
   height: 5px;
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b4{
+#sobre .container .box-title .b4 {
   width: 290px;
   height: 5px;
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b5{
+#sobre .container .box-title .b5 {
   width: 250px;
   height: 5px;
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b6{
+#sobre .container .box-title .b6 {
   width: 235px;
   height: 5px;
   background-color: #156fc3;
   margin-top: 5px;
   border-radius: 5px;
 }
-#sobre .container .box-title .b7{
+#sobre .container .box-title .b7 {
   width: 200px;
   height: 5px;
   background-color: #156fc3;
@@ -230,7 +236,7 @@ header .menu ul li a:hover {
 }
 
 /*=========PÁGINA - SOBRE===========*/
-#projetos .container{
+#projetos .container {
   width: 100%;
   height: 100vh;
   background: url(image/CREATIVE_3.png); /*fundo da pagina sobre*/
@@ -241,10 +247,11 @@ header .menu ul li a:hover {
   align-items: center;
 }
 /*entrando a tag input e acessando o parametro type=radio*/
-#projetos .container input[type=radio]{
+#projetos .container input[type="radio"] {
   display: none;
 }
-#projetos .container .card{ /*estilizando a label*/
+#projetos .container .card {
+  /*estilizando a label*/
   position: absolute;
   width: 40%;
   height: 80%;
@@ -259,20 +266,23 @@ header .menu ul li a:hover {
   transition: 0.4s ease;
   cursor: pointer;
 }
-#projetos .container .card img{ /*estilizando a imagem da label*/
+#projetos .container .card img {
+  /*estilizando a imagem da label*/
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-#projetos .container .card h1{ /*estilizando o titulo da label*/
+#projetos .container .card h1 {
+  /*estilizando o titulo da label*/
   position: absolute;
   z-index: 9;
   color: #fff;
   font-size: 6rem;
   margin-top: 60px;
 }
-#projetos .container .card p{ /*estilizando o paragrafo da label*/
+#projetos .container .card p {
+  /*estilizando o paragrafo da label*/
   position: absolute;
   z-index: 9;
   width: 400px;
@@ -280,7 +290,8 @@ header .menu ul li a:hover {
   margin-top: 200px;
   text-align: justify;
 }
-#projetos .container .card button{ /*estilizando o botão da label*/
+#projetos .container .card button {
+  /*estilizando o botão da label*/
   position: absolute;
   z-index: 9;
   margin-top: 400px;
@@ -292,7 +303,7 @@ header .menu ul li a:hover {
   text-transform: uppercase;
   cursor: pointer;
 }
-#projetos .container .cards{
+#projetos .container .cards {
   position: relative;
   width: 100%;
   height: 100%;
@@ -300,21 +311,21 @@ header .menu ul li a:hover {
 /*FUNCIONAMENTO DOS CARDOS DO CARROSSEL*/
 #item-1:checked ~ .cards #song-3,
 #item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2{
+#item-3:checked ~ .cards #song-2 {
   transform: translateX(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 #item-1:checked ~ .cards #song-2,
 #item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1{
+#item-3:checked ~ .cards #song-1 {
   transform: translateX(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 #item-1:checked ~ .cards #song-1,
 #item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3{
+#item-3:checked ~ .cards #song-3 {
   transform: translateX(0) scale(1);
   opacity: 1;
   z-index: 1;
@@ -322,43 +333,101 @@ header .menu ul li a:hover {
 
 /*=========PÁGINA - CONTATOS===========*/
 
-#contatos .container{
+#contatos .container {
   width: 100%;
   height: 100vh;
   background: url(image/CREATIVE_3.png); /*fundo da pagina sobre*/
   background-size: cover;
 }
-#contatos .container .content-contact{
+#contatos .container .content-contact {
   width: 80%;
   height: 60vh;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 300px 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-#contatos .content-contact .contact-left{
+#contatos .content-contact .contact-left {
   width: 50%;
   display: flex;
   flex-direction: column;
   color: #fff;
 }
-#contatos .content-contact .contact-left h1{
-  font-size: 2rem;
+#contatos .content-contact .contact-left h1 {
+  font-size: 1.7rem;
   text-transform: uppercase;
 }
-#contatos .content-contact .linha{ /*linha divisória*/
+#contatos .content-contact .linha {
+  /*linha divisória*/
   width: 350px;
   height: 3px;
   background-color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#contatos .content-contact .contact-left ion-icon{
+#contatos .content-contact .contact-left ion-icon {
   font-size: 2rem;
   padding: 20px 0;
 }
-#contatos .content-contact .contact-left span{
+#contatos .content-contact .contact-left span {
   font-size: 1.2rem;
   padding: 5px 0;
+  margin-top: 0;
+  border: none;
 }
+#contatos .content-contact .contact-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#contatos .content-contact .contact-right h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#contatos .content-contact .contact-right .linha {
+  width: 350px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contatos .content-contact .contact-right input[type="email"],
+#contatos .content-contact .contact-right input[type="text"] {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+}
+#contatos .content-contact .contact-right textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+  padding: 15px 20px;
+}
+
+/*========= <footer> - CABEÇALHO===========*/
+footer {
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -80px;
+}
+footer a {
+  color: #2e8b57;
+}
+
+/*========= RESPONSIVIDADE DA PÁGINA ===========*/
