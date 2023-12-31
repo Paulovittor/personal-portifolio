@@ -431,3 +431,56 @@ footer a {
 }
 
 /*========= RESPONSIVIDADE DA PÁGINA ===========*/
+
+@media screen and (max-width: 1280px) {
+  #inicio .container .icons ion-icon{
+    font-size: 1.5rem;
+  }
+  #projetos .container .card h1{
+    font-size: 5rem;
+  }
+  #projetos .container .card p{
+    width: 280px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  body {
+    background: url(image/CREATIVE_3.png);
+  }
+  header {
+    background: none;
+  }
+  header .logo {
+    width: 600px;
+  }
+  header .btn-mobile{
+    display: block;
+  }
+  header .btn-mobile ion-icon{
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  header .menu-mobile{
+    display: none;
+    width: 50%;
+    height: 20vh;
+    box-shadow: 0 0 15px rgba(18, 111, 197, 0.5);
+    position: fixed;
+    top: 20px;
+    border-radius: 10px;
+    background: #156fc3;
+  }
+  header .menu-mobile ul{
+    text-align: center;
+  }
+  header .menu-mobile ul li{
+    list-style: none;
+    padding: 12px 0;
+  }
+  header .menu-mobile ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

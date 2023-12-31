@@ -20,6 +20,16 @@
           <li><a href="#contatos">Contatos</a></li>
         </ul>
       </div>
+      <!--MENU UTILIZADO SOMENTE NO MOBILE-->
+      <div class="menu-mobile">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </div>
+      <div class="btn-mobile">
+        <ion-icon name="grid-outline"></ion-icon>
+      </div>
     </header>
 
     <!--conteúdo da página de INICIO-->
@@ -49,7 +59,10 @@
         <div class="title">
           <h1>I am a Front-End Developer</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum alias maxime iusto quos, nam quo voluptatum, aliquid obcaecati impedit consequuntur perspiciatis laboriosam quod doloremque aliquam enim soluta, illo vel laborum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum alias
+            maxime iusto quos, nam quo voluptatum, aliquid obcaecati impedit
+            consequuntur perspiciatis laboriosam quod doloremque aliquam enim
+            soluta, illo vel laborum?
           </p>
           <!--Criando caixa de experiencia-->
           <div class="box-title">
@@ -139,10 +152,12 @@
     <!--conteúdo da página CONTATOS-->
     <section id="contatos">
       <div class="container">
-        <div class="content-contact"> <!--conteudo do contato-->
+        <div class="content-contact">
+          <!--conteudo do contato-->
           <div class="contact-left">
             <h1>contact with me</h1>
-            <div class="linha"></div> <!--linha divisória-->
+            <div class="linha"></div>
+            <!--linha divisória-->
             <ion-icon name="mail-outline"></ion-icon>
             <span>info@front.com.br</span>
             <ion-icon name="call-outline"></ion-icon>
@@ -154,9 +169,10 @@
           <div class="contact-right">
             <h1>Fill the form</h1>
             <div class="linha"></div>
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Name">
-            <textarea placeholder="Message"></textarea> <!--area de texto para mensagem-->
+            <input type="email" placeholder="E-mail" />
+            <input type="text" placeholder="Name" />
+            <textarea placeholder="Message"></textarea>
+            <!--area de texto para mensagem-->
           </div>
         </div>
       </div>
@@ -175,5 +191,13 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".btn-mobile").click(function(){
+          $(".btn-mobile").slideToggle("slow")
+        })
+      })
+    </script>
   </body>
 </html>
